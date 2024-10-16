@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Les conditions</h1>
+
+    
+    </form>
+
+    <script>
+
+        const age = prompt('Quel est ton age')
+        if(age >= 18){
+            let genre = prompt('es-tu une femme ? Réponds oui ou non')
+            genre = genre.toLowerCase()
+            if(genre === 'oui'){
+                console.log('C gratuit pour toi')
+            }else{
+                console.log('2O balles')
+            }
+           
+        }else{
+            console.log('Dégage Gamin')
+        }
+
+        
+/*
+       if(age >= 18 && genre === 'oui'){
+        console.log('Tu rentres sans payer')
+       }else if(age >= 18 && genre !== 'oui'){
+        console.log('Tu rentres mais tu payes')
+       }else{
+        console.log('Organise une boum')
+       }
+       */
+    </script>
+</body>
+</html>
