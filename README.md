@@ -1,2 +1,2 @@
 # A propos
-Apprentissage de JS - DWWM bègles 2024
+Apprentissage de JS - DWWM 2024 - AFPA bègles 
