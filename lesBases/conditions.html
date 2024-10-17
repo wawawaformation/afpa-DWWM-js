@@ -1,42 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Les conditions</h1>
 
-    
+
     </form>
 
     <script>
 
         const age = prompt('Quel est ton age')
-        if(age >= 18){
+        if (age >= 18) {
             let genre = prompt('es-tu une femme ? Réponds oui ou non')
             genre = genre.toLowerCase()
-            if(genre === 'oui'){
+            if (genre === 'oui') {
                 console.log('C gratuit pour toi')
-            }else{
+            } else {
                 console.log('2O balles')
             }
-           
-        }else{
+
+        } else {
             console.log('Dégage Gamin')
         }
 
-        
+
+        /*
+               if(age >= 18 && genre === 'oui'){
+                console.log('Tu rentres sans payer')
+               }else if(age >= 18 && genre !== 'oui'){
+                console.log('Tu rentres mais tu payes')
+               }else{
+                console.log('Organise une boum')
+               }
+               */
+
+
+
+        const civilite = 'Homme'
 /*
-       if(age >= 18 && genre === 'oui'){
-        console.log('Tu rentres sans payer')
-       }else if(age >= 18 && genre !== 'oui'){
-        console.log('Tu rentres mais tu payes')
-       }else{
-        console.log('Organise une boum')
-       }
-       */
+        if (civilite.toLowerCase() === 'monsieur') {
+            console.log('Bojour Monsieur')
+        } else if (civilite.toLowerCase() === 'madame') {
+            console.log('Bonjour Madame')
+        } else {
+            console.log('Bonjour iel')
+        }
+
+    */
+
+
+    switch(civilite.toLowerCase()){
+        case 'monsieur':
+        case 'homme':
+            console.log('M.')
+            break
+        case 'madame':
+        case 'mademoiselle':
+        
+            console.log('Mme')
+            break
+        default: 
+            console.log('Iel')
+            break
+        
+    }
+
+
+    //condition ternaire
+
+    const truc = age >= 18 ? 'majeur': 'mineur'
     </script>
 </body>
+
 </html>
