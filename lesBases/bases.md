@@ -85,16 +85,39 @@
 ## Les boucles : 15 min
 - la boucle for
 - la boucle while
-- parcours d'un tableau avec la methode for of
-- Exercice (5 minutes) :
-    Ecrivez un programme qui demande une phrase à copier, le nombre d'occurences voulu et qui écrit la punition à notre place
+- parcours d'un tableau avec la methode for...of
+- parcours d'un objet avec la methode for...in
+- Exercices
+    - Exercice while et for :
+    Ecrivez un programme qui demande une phrase à copier, le nombre d'occurences voulu et qui écrit la punition à notre place avec while puis avec for
+    - Exercice for...of: 
+    Utiliser une boucle for...of pour parcourir un tableau de notes et calculer la somme et la moyenne des notes des élèves
+    - Exercice for...in :
+        1. Étape 1 : Créez un objet appelé etudiant qui contient des propriétés comme nom, age, classe, et notes :
+
+        
+            ```js
+
+            const etudiant = {
+                nom: "Marie",
+                age: 21,
+                classe: "Informatique",
+                notes: [15, 17, 18, 10]
+            };
+            ```
+
+        1. Étape 2 : Utilisez une boucle for...in pour parcourir les propriétés de l'objet etudiant. À chaque itération, affichez la clé (nom de la propriété) et la valeur associée.
+
+        1. Étape 3 : Affichez ces informations dans la console avec console.log.
+
+
 
 ## Le fonctions : 15 min
 - de quoi parle t'on ?
 - prototype d'une fonction
 - une fonction sauvegardée dans une variable
 - les fonctions fléchées
-- Exercices  (10 minutes)
+- Exercice
     1. Créez trois tableaux contenant différentes parties de phrases :
         - sujets : par exemple, ["Le succès", "La persévérance", "L'échec", "Le courage", "L'apprentissage"]
         - verbes : par exemple, ["est", "vient de", "représente", "encourage à", "se manifeste dans"]
