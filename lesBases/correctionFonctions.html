@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        sujets = ["Le succès", "La persévérance", "L'échec", "Le courage", "L'apprentissage"]
+        verbes = ["est", "vient de", "représente", "encourage à", "se manifeste dans"]
+        complements = ["l'effort constant", "les petits pas", "le dépassement de soi", "la prise de risque", "la résilience"]
+
+
+        const tirerNombre = (min, max)=>  Math.round(Math.random()*(max-min) + min)
+
+
+       const shuffleItem = list => list[tirerNombre(0, list.length - 1)]
+       
+
+
+       let phrase = '';
+       phrase += shuffleItem(sujets) + ' '
+       phrase += shuffleItem(verbes) + ' '
+       phrase += shuffleItem(complements) + '.'
+
+       console.log(phrase)
+       
+    </script>
+</body>
+</html>
