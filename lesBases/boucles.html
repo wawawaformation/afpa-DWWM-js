@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        /*
+        let phraseACopier, occurence, punition
+
+        phraseACopier = prompt('Que dois-je copier ?')
+        occurence = parseInt(prompt('Combien de fois ?'))
+        punition = ''
+        */
+/*
+        while(occurence>0){
+            punition += occurence + ') '+ phraseACopier + '\n'
+            occurence--
+        }
+        console.log(punition)
+    */
+/*
+    for(let i=1; i<=occurence; i++){
+        punition += i + ') '+ phraseACopier + '\n'
+    }
+    console.log(punition)
+    */
+   apprenants = [
+    'thomas',
+    'Alain',
+    'Oriane',
+    'Ying'
+   ]
+/*
+   for(let indice = 0; indice < apprenants.length; indice++){
+    console.log(apprenants[indice])
+   }
+*/
+
+/*
+
+   for(apprenant of apprenants){
+    console.log(apprenant)
+   }
+   */
+
+   const thomas = {
+    yeux: 'noir',
+    taille: 173,
+    poids: 70,
+    chaussures: true
+   }
+   for(property in thomas){
+    console.log(property, ' : ', thomas[property])
+   }
+    </script>
+</body>
+</html>
