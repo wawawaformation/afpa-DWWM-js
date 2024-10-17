@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        const notes = [15, 10, 17, 8, 18, 2, 20, 1]
+
+        let somme=0
+        let moyenne;
+
+        for(let note of notes)
+        {
+            somme += note
+        }
+        console.log(Math.round(somme / notes.length))
+        */
+
+        const etudiant = {
+            nom: 'Marie',
+            age: 21,
+            classe: 'informatique',
+            notes: [15, 17, 18, 10]
+        }
+
+        for(propriete in etudiant){
+            console.log(propriete, '->', etudiant[propriete])
+        }
+    </script>
+</body>
+</html>
